@@ -1,0 +1,39 @@
+html,
+body {
+    height: 100%;
+    background: -webkit-linear-gradient(to bottom right, #ff9999 0%, #cc99ff 93%);
+    background:  linear-gradient(to bottom right, #ff9999 0%, #cc99ff 93%);
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    max-width: 1000px;
+}
+
+header {
+    text-align: center;
+    margin: 0 0 1.25rem 0;
+    padding-top: 1.25rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    color: #cc0066;
+}
