@@ -37,3 +37,71 @@ header {
     letter-spacing: 0.3rem;
     color: #cc0066;
 }
+
+.accordion {
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+    transition: color .3s linear;
+}
+
+.accordion:hover {
+    color: #cc0066;
+}
+
+.title_conteiner {
+    padding-top: 1rem;
+    border-top: 0.125rem solid #cc0099;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title_conteiner .close {
+    width: 1rem;
+    height: 1rem;
+    opacity: 0;
+    transition: 1s;
+}
+
+.accordion:hover .close {
+    transform: rotate(90deg);
+    opacity: 1;
+}
+
+.image {
+    width: 0%;
+    height: 0%;
+    display: block;
+    transition: .4s;
+    margin: 0 auto;
+    padding-bottom: 1.25rem;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+
+label:hover .image {
+    width: 50%;
+    height: auto;
+    margin-top: 0.6rem;
+}
+
+.accordion input {
+    display: none;
+}
+
+.accordion input:checked+label {
+    color: #cc0066;
+}
+
+.accordion input:checked+label .image {
+    margin-top: 0.6rem;
+    width: 50%;
+    height: auto;
+    background: cover;
+    transition: 1s linear;
+}
