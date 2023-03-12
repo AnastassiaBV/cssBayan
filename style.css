@@ -105,3 +105,28 @@ label:hover .image {
     background: cover;
     transition: 1s linear;
 }
+
+@media (max-width:810px) {
+    header {
+        font-size: 2rem;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .title_conteiner .close {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+}
+
+@media (max-width:515px) {
+    header {
+        font-size: 1.4rem;
+    }
+
+    .title {
+        font-size: 0.68rem;
+    }
+}
