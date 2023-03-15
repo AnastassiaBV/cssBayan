@@ -1,5 +1,7 @@
-html,
-body {
+html{
+    height: 100%;
+}
+body{
     height: 100%;
     background: -webkit-linear-gradient(to bottom right, #ff9999 0%, #cc99ff 93%);
     background:  linear-gradient(to bottom right, #ff9999 0%, #cc99ff 93%);
@@ -24,7 +26,8 @@ p {
 .container {
     margin: 0 auto;
     padding: 0 1.25rem;
-    max-width: 1000px;
+    max-width: 100vh;
+    height: 100%;
 }
 
 header {
@@ -62,7 +65,7 @@ header {
 
 .image {
     width: 0%;
-    height: 0%;
+    height: auto;
     display: block;
     transition: .4s;
     margin: 0 auto;
@@ -73,8 +76,14 @@ label {
     display: block;
     cursor: pointer;
 }
-
+svg{
+    width: 1rem;
+    height: 1rem;
+    opacity: 0;
+    transition: .3s linear;
+}
 .title {
+    font-size: 1.2rem;
     color: #cc0066 ;
     transition: .2s linear;
 }
@@ -93,7 +102,7 @@ label {
 
 .accordion input:checked+label .image {
     margin-top: 0.6rem;
-    width: 50%;
+    width: 45%;
     height: auto;
     background: cover;
     transition: 1s linear;
@@ -115,7 +124,9 @@ label {
     header {
         font-size: 2rem;
     }
-
+    svg{
+        opacity: 1;
+    }
     .title {
         font-size: 1rem;
     }
@@ -136,7 +147,10 @@ label {
     header {
         font-size: 1.4rem;
     }
-
+    svg{
+        width: 0.68rem;
+        height: 0.68rem;
+    }
     .title {
         font-size: 0.68rem;
     }
@@ -153,10 +167,11 @@ label {
     }
 
     .accordion:hover svg {
-        transform: rotate(90deg);
         opacity: 1;
     }
-
+    label:hover svg{
+        transform: rotate(90deg);
+    }
     label:hover .image {
         width: 50%;
         height: auto;
